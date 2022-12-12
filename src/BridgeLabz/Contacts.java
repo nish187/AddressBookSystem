@@ -1,5 +1,6 @@
 package BridgeLabz;
 
+
 public class Contacts {
     private String firstName, lastName, address, city, state, emailId;
     private int zip;
