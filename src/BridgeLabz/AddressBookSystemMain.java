@@ -8,7 +8,7 @@ public class AddressBookSystemMain {
         System.out.println("Welcome to address book system using collection");
         Scanner sc = new Scanner(System.in);
 
-        AddressBookSystemDetails details = new AddressBookSystemDetails();
+        AddressBook details = new AddressBook();
 
         int choice = 1;
         while (choice == 1){
@@ -17,7 +17,7 @@ public class AddressBookSystemMain {
 
             switch (sc.nextInt()){
                 case 1:
-                    details.addDetails();
+                    details.addContact();
                     break;
                 case  2:
                     details.editDetails();
@@ -29,8 +29,10 @@ public class AddressBookSystemMain {
                     details.display();
                     break;
                 default:
-                    choice = 0;
+                    System.out.println("Invalid choice");
             }
+            System.out.println("Do you want to continue?(0/1)");
+            sc.nextInt();
         }
     }
 }

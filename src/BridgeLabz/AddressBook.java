@@ -2,14 +2,14 @@ package BridgeLabz;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AddressBookSystemDetails {
+public class AddressBook {
 
     ArrayList<Contacts> personDetails = new ArrayList<Contacts>();
     Contacts contacts = new Contacts(null, null, null, null, null, null, 0, 0);
     Scanner sc = new Scanner(System.in);
 
     //This method is used to add details to address book
-    public void addDetails() {
+    public void addContact() {
 
         System.out.println("Enter the first name: ");
         String firstName = sc.next();

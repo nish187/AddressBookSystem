@@ -6,8 +6,6 @@ public class Contacts {
     private String firstName, lastName, address, city, state, emailId;
     private int zip;
     private long phoneNumber;
-
-    //Used constructor to store parameters
     public Contacts (String firstName, String lastName, String address, String city, String state, String emailId, int zip, long phoneNumber){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -19,7 +17,7 @@ public class Contacts {
         this.phoneNumber = phoneNumber;
     }
 
-    //Usd getters And setters to get and set contact details
+
     public String getFirstName() {
         return firstName;
     }
